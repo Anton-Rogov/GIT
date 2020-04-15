@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//     let obj = '{"foo": "bar", "marvin": 42, "dharma": [4, 8, 15, 16, 23, 42]}';
+// let user = JSON.parse(obj);
+// console.log(user);
+// 
+// 
+function clunk(times){
+    let num = times;
+    while(num > 0){
+        display("clunk");
+        num = num - 1;
+    }
+}
+function thingamajig(size){
+    let facky = 1;
+    clunkCounter = 0;
+    if(size == 0){
+        display("clank");
+        } else if (size == 1){
+    display("thunk");
+    } else {
+        while(size > 1){
+            facky = facky * size;
+            size = size - 1;
+        }
+        clunk(facky);
+    }
+}
+function display (output){
+    console.log(output);
+    clunkCounter = clunkCounter + 1;
+}
+let clunkCounter = 0;
+thingamajig(7);
+console.log(clunkCounter);
+    </script>
+</body>
+</html>
+
+  
